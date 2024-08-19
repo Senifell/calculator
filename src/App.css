@@ -1,0 +1,76 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+
+#root {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c2c2d6;
+}
+
+.calculator {
+  border: 2px solid #47476b;
+  padding: 5px;
+  background: black;
+  width: 320px;
+  position: relative;
+}
+
+.formulaScreen {
+  min-height: 20px;
+  font-family: Share Tech Mono;
+  font-size: 20px;
+  color: orange;
+  text-align: right;
+  vertical-align: text-top;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.outputScreen {
+  min-height: 30px;
+  font-size: 29px;
+  font-family: Share Tech Mono;
+  color: white;
+  text-align: right;
+  line-height: 35px;
+}
+
+button {
+  position: relative;
+  height: 65px;
+  width: 80px;
+  color: white;
+  outline: 1px solid black;
+  border: none;
+  background: #4d4d4d;
+  font-family: Share Tech Mono, monospace;
+  font-size: 20px;
+  cursor: default;
+}
+button:hover {
+  color: black;
+  outline: 0.05em solid grey;
+  z-index: 3;
+}
+
+
+.longButton {
+  width: 160px;
+}
+
+#equals {
+  height: 130px;
+  position: absolute;
+  bottom: 5px;
+  background-color: #004466;
+}
+
+#clear {
+  background-color: #AC3939;
+}
+
+#add, #divide, #subtract, #multiply {
+  background-color: #666666;
+}
